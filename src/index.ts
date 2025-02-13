@@ -1,6 +1,19 @@
 import { add, multiply } from "./utils/mathUtils";
 import { capitalize } from "./utils/stringUtils";
 
-console.log("Sum: ", add(2, 3));
-console.log("Product: ", multiply(2, 3));
+class Main {
+  addNumbers(){
+    return add(2, 3);
+  }
+
+  multiplyNumbers() {
+    return multiply(2, 3)
+  }
+}
+
+const main: Main = new Main();
+console.log("Sum: ", main.addNumbers());
+console.log("Product: ", main.multiplyNumbers());
 console.log("Capitalized: ", capitalize("hello"));
+
+
